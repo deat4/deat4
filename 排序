@@ -1,0 +1,36 @@
+#include<stdio.h>
+void swop(int *pa,int *pb);
+int main()
+{
+	int a,b,c;
+	int n;
+	int i=0;
+	while(scanf("%d%d%d",&a,&b,&c)!=EOF)
+	{
+			if(a>b){
+				
+			}
+			else    {
+			swop(&a,&b);
+			}
+			if(a>c){
+				
+			}else{
+				swop(&a,&c);
+			}
+			if(b>c){
+				
+			}else{
+				swop(&b,&c);
+		}
+			printf("%d->%d->%d  \n",c,b,a);
+		
+	}
+		return 0;	
+    }   
+void swop(int *pa,int *pb)
+{
+	int t =*pa;
+	*pa=*pb;
+	*pb=t;
+}
